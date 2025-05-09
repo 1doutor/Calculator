@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./output.css" />
+</head>
+
+
+
+<body>
+    
+<main class="bg-gray-900 text-white flex justify-center items-center min-h-screen">
+
+    <div class="bg-black w-[340px] rounded-3xl p-4">
+        
+        
+
+    <div id="display" class="bg-gray-800 h-20 rounded-xl text-4xl font-mono font-semibold overflow-auto text-right p-4 ">0</div> 
+    
+    
+     <div class="grid grid-cols-4 gap-3 mt-5 text-2xl font-semibold">
+        <button onclick="clearDisplay()" type="button" class="bg-gray-700 rounded-full py-[18px] ">AC</button> 
+        <button onclick="deleteLast()" type="button" class="bg-gray-700 rounded-full w-[68px] h-[68px] text-3xl">⌫</button>
+        <button onclick="appendOperator('%')" type="button" class="bg-gray-700 rounded-full w-[68px] h-[68px] text-3xl">%</button>
+        <button onclick="appendOperator('/')" type="button" class="bg-orange-500 rounded-full w-[68px] h-[68px] text-3xl">(÷)</button>
+    
+        
+        <button onclick="appendNumber('7')" type="button" class="bg-gray-800 rounded-full py-[18px] ">7</button> 
+        <button onclick="appendNumber('8')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">8</button>
+        <button onclick="appendNumber('9')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">9</button>
+        <button onclick="appendOperator('*')" type="button" class="bg-orange-500 rounded-full w-[68px] h-[68px] text-3xl">(×)</button>
+
+
+        <button onclick="appendNumber('4')" type="button" class="bg-gray-800 rounded-full py-[18px] ">4</button> 
+        <button onclick="appendNumber('5')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">5</button>
+        <button onclick="appendNumber('6')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">6</button>
+        <button onclick="appendOperator('-')" type="button" class="bg-orange-500 rounded-full w-[68px] h-[68px] text-3xl">(−)</button>
+
+        
+        <button onclick="appendNumber('1')" type="button" class="bg-gray-800 rounded-full py-[18px] ">1</button> 
+        <button onclick="appendNumber('2')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">2</button>
+        <button onclick="appendNumber('3')" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">3</button>
+        <button onclick="appendOperator('+')" type="button" class="bg-orange-500 rounded-full w-[68px] h-[68px] text-3xl">(+)</button>
+    
+        <button onclick="appendNumber('0')" type="button" class="bg-gray-800 rounded-full py-[18px] col-span-2 ">0</button> 
+        <button onclick="appendDot()" type="button" class="bg-gray-800 rounded-full w-[68px] h-[68px] text-3xl">.</button>
+        <button onclick="calculateResult()" type="button" class="bg-green-500  rounded-full w-[68px] h-[68px] text-3xl">=</button>
+        
+    
+    </div>
+     
+    </div>
+
+
+
+</main>
+
+
+
+
+
+
+
+    <script src="./JS/script.js"></script>
+
+</body>
+</html>
